@@ -129,8 +129,21 @@ font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
 background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em;
 }
 
+/* --- Case-study layout: image mosaic + copy, used for FRET12 / Goodfall / Documentary / Real Estate --- */
 .case{
 display:grid; grid-template-columns:1fr 1fr;
+}
+.case-full{display:block;}
+.case-full .case-media{border-right:none;}
+.case-full .case-copy{
+padding:28px 32px 36px; border-top:1px solid var(--line);
+display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start;
+}
+.case-full .case-copy p{max-width:42ch; margin-bottom:0;}
+.case-full .role-tags{margin-top:0; align-self:center;}
+@media (max-width:700px){
+.case-full .case-copy{display:block;}
+.case-full .case-copy p{margin-bottom:16px;}
 }
 .case.reverse .case-media{order:2; border-left:1px solid var(--line); border-right:none;}
 .case.reverse .case-copy{order:1;}
@@ -327,7 +340,7 @@ letter-spacing:0.04em; text-transform:uppercase;
 <h2>FRET12</h2>
 </div>
 <div class="section-meta">Content Producer / Digital Strategist</div>
-<div class="case">
+<div class="case case-full">
 <div class="case-media video-grid">
 <div class="video-embed"><span class="tag">FRET12 Reel</span><iframe src="https://www.youtube-nocookie.com/embed/aCzN8zu0TeY" title="FRET12 Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 <div class="video-embed"><span class="tag">Sessions Reel</span><iframe src="https://www.youtube-nocookie.com/embed/KrnUvRqkFx0" title="FRET12 Sessions Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
@@ -381,7 +394,7 @@ letter-spacing:0.04em; text-transform:uppercase;
 <h2>Documentary</h2>
 </div>
 <div class="section-meta">Videographer / Editor</div>
-<div class="case">
+<div class="case case-full">
 <div class="case-media video-grid">
 <div class="video-embed"><span class="tag">01</span><iframe src="https://www.youtube-nocookie.com/embed/YEiy2NTixOw" title="Documentary 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 <div class="video-embed"><span class="tag">02</span><iframe src="https://www.youtube-nocookie.com/embed/a-ekxLXxETY" title="Documentary 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
