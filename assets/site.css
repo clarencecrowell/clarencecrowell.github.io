@@ -222,7 +222,27 @@ a.tile{color:inherit; text-decoration:none;}
 .grid-photo figure{position:relative; aspect-ratio:16/9; overflow:hidden; background:#000; filter:grayscale(30%) contrast(1.08);}
 .grid-photo img{width:100%; height:100%; object-fit:cover; display:block;}
 
+/* Photo series: natural aspect ratios, true color, click to enlarge */
+.masonry{columns:3 280px; column-gap:6px; padding:6px; border-bottom:1px solid var(--line);}
+.masonry.two{columns:2 340px;}
+.masonry figure{position:relative; break-inside:avoid; margin:0 0 6px; background:#000;}
+.masonry img{width:100%; height:auto; display:block; cursor:zoom-in;}
+.masonry img:focus-visible{outline:2px solid var(--signal); outline-offset:-2px;}
+.lightbox{position:fixed; inset:0; z-index:300; background:rgba(8,8,8,0.96); display:none; align-items:center; justify-content:center; padding:48px 20px 20px;}
+.lightbox.on{display:flex;}
+.lightbox img{max-width:100%; max-height:100%; object-fit:contain; cursor:pointer;}
+.lightbox .lb-cap{position:absolute; left:20px; top:16px; font-family:var(--mono); font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--ink-dim);}
+.lb-close{position:absolute; top:8px; right:14px; background:none; border:0; color:var(--ink); font:400 34px/1 var(--mono); cursor:pointer; padding:4px 8px;}
+.lb-close:hover{color:var(--signal);}
+
 /* ---------- Writing ---------- */
+.book-cover{display:block; width:100%; height:auto; max-width:200px; margin:18px 0 0 auto; box-shadow:0 0 0 1px var(--line);}
+.excerpt{display:grid; grid-template-columns:120px 1fr; border-bottom:1px solid var(--line); background:var(--panel);}
+.excerpt .label{padding-top:36px;}
+.prose{padding:34px 32px 44px; max-width:calc(64ch + 64px);}
+.prose .src{font-family:var(--mono); font-size:10px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:24px;}
+.prose p{font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif; font-size:19px; line-height:1.7; color:#D9D6CE; margin:0 0 0.9em;}
+.prose p:last-child{margin-bottom:0;}
 .write-row{
 display:grid; grid-template-columns:120px 1fr 200px;
 align-items:start; border-bottom:1px solid var(--line);
@@ -293,6 +313,13 @@ nav ul{flex-wrap:nowrap;}
 .write-num{padding:26px 12px 0 0;}
 .write-body{padding:24px 0 8px 18px;}
 .write-status{grid-column:2; text-align:left; padding:0 0 26px 18px;}
+.excerpt{grid-template-columns:1fr;}
+.excerpt .label{border-right:none; border-bottom:1px solid var(--line); padding:18px 0;}
+.prose{padding:24px 0 32px;}
+.prose p{font-size:17px; line-height:1.65;}
+.book-cover{max-width:150px; margin:14px 0 0 0;}
+.masonry, .masonry.two{columns:2 150px; column-gap:4px; padding:4px 0;}
+.masonry figure{margin-bottom:4px;}
 .pager{grid-template-columns:1fr;}
 .pager a + a{border-left:none; border-top:1px solid var(--line);}
 .footer-grid{grid-template-columns:1fr;}
