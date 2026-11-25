@@ -81,6 +81,17 @@ padding:6px 10px; transform:rotate(-2deg);
 }
 
 /* ---------- Home intro + index ---------- */
+.h1-first{display:block; font-family:var(--mono); font-weight:400; font-size:13px; letter-spacing:0.12em; line-height:1; color:var(--ink-dim); margin:0 0 18px 4px;}
+h2.label{font-weight:400; margin:0;}
+.facts{display:grid; grid-template-columns:120px 1fr; border-bottom:1px solid var(--line);}
+.facts-list{display:grid; grid-template-columns:repeat(3, 1fr);}
+.facts-list div{padding:20px 24px 22px; border-left:1px solid var(--line); border-bottom:1px solid var(--line);}
+.facts-list div:nth-child(3n+1){border-left:none;}
+.facts-list div:nth-last-child(-n+3){border-bottom:none;}
+.facts-list dt{font-family:var(--mono); font-size:10px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:6px;}
+.facts-list dd{font-size:15px; line-height:1.45; color:var(--ink);}
+.facts-list a{color:var(--ink); text-decoration-color:var(--line); text-underline-offset:3px;}
+.facts-list a:hover{color:var(--signal);}
 .intro{display:grid; grid-template-columns:120px 1fr; border-bottom:1px solid var(--line);}
 .label{
 font-family:var(--mono); font-size:12px; color:var(--signal); letter-spacing:0.08em; text-transform:uppercase;
@@ -287,7 +298,13 @@ font-family:var(--mono); font-size:10px; color:var(--ink-dim); letter-spacing:0.
 nav{width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
 nav::-webkit-scrollbar{display:none;}
 nav ul{flex-wrap:nowrap;}
-.intro{grid-template-columns:1fr;}
+.intro, .facts{grid-template-columns:1fr;}
+.facts .label{border-right:none; border-bottom:1px solid var(--line); padding:18px 0;}
+.facts-list{grid-template-columns:1fr 1fr;}
+.facts-list div{padding:16px 14px 18px 0; border-left:none;}
+.facts-list div:nth-child(2n){padding-left:14px; border-left:1px solid var(--line);}
+.facts-list div:nth-last-child(-n+3){border-bottom:1px solid var(--line);}
+.facts-list div:nth-last-child(-n+2){border-bottom:none;}
 .intro .label{border-right:none; border-bottom:1px solid var(--line); padding:18px 0;}
 .intro p{padding:24px 0 28px;}
 .index-row{grid-template-columns:56px 1fr;}
