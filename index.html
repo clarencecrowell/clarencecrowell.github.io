@@ -3,345 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clarence Crowell — Photography, Video, Design</title>
+<title>Clarence Crowell: Photographer and Filmmaker, Chicago</title>
+<meta name="description" content="Clarence Crowell is a Chicago photographer and filmmaker. Campaign films, ads, live music sessions and documentary work for FRET12, plus Good Fall Studio and fiction.">
+<link rel="canonical" href="https://clarencecrowell.org/">
+<meta name="theme-color" content="#0B0B0B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clarence Crowell">
+<meta property="og:title" content="Clarence Crowell: Photographer and Filmmaker, Chicago">
+<meta property="og:description" content="Clarence Crowell is a Chicago photographer and filmmaker. Campaign films, ads, live music sessions and documentary work for FRET12, plus Good Fall Studio and fiction.">
+<meta property="og:url" content="https://clarencecrowell.org/">
+<meta property="og:image" content="https://clarencecrowell.org/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-:root{
---bg: #0B0B0B;
---ink: #ECEAE4;
---ink-dim: #8C8A83;
---line: #2A2A28;
---signal: #FF3B1F;
---panel: #131311;
-}
-*{box-sizing:border-box; margin:0; padding:0;}
-body{
-background:var(--bg);
-color:var(--ink);
-font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
--webkit-font-smoothing:antialiased;
-position:relative;
-}
-body::before{
-content:'';
-position:fixed; inset:0; pointer-events:none; z-index:100;
-opacity:0.05; mix-blend-mode:overlay;
-background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-.wrap{max-width:1240px; margin:0 auto; padding:0 32px;}
-
-header.masthead{
-border-bottom:1px solid var(--line);
-padding:22px 0;
-position:sticky; top:0; z-index:50;
-background:var(--bg);
-}
-.masthead-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
-.brand{
-font-family:'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:16px;
-letter-spacing:-0.01em; text-transform:uppercase;
-}
-nav ul{list-style:none; display:flex; gap:0;}
-nav a{
-color:var(--ink-dim); text-decoration:none;
-font-family:'JetBrains Mono', monospace; font-size:11px;
-letter-spacing:0.08em; text-transform:uppercase;
-padding:8px 16px; border-left:1px solid var(--line);
-transition:color .1s linear, background .1s linear;
-}
-nav li:last-child a{border-right:1px solid var(--line);}
-nav a:hover, nav a:focus-visible{color:var(--bg); background:var(--signal);}
-
-.hero{
-padding:80px 0 0;
-border-bottom:1px solid var(--line);
-}
-.hero-top{
-display:flex; justify-content:space-between; align-items:flex-start;
-font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.08em;
-text-transform:uppercase; color:var(--ink-dim); padding-bottom:28px;
-}
-.hero-top span{color:var(--signal);}
-.hero h1{
-font-family:'Helvetica Neue', Arial, sans-serif; font-weight:900;
-font-size:clamp(52px, 10vw, 148px); line-height:0.86; letter-spacing:-0.045em;
-text-transform:uppercase;
-}
-.hero-roles{
-display:flex; gap:0; flex-wrap:wrap; margin-top:26px; border-top:1px solid var(--line);
-}
-.hero-roles span{
-font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em;
-text-transform:uppercase; padding:14px 22px 14px 0; margin-right:22px;
-border-right:1px solid var(--line); color:var(--ink-dim);
-}
-.hero-roles span:last-child{border-right:none; margin-right:0;}
-.hero-figure{
-margin-top:40px; position:relative; overflow:hidden; aspect-ratio:21/9; background:#000;
-filter:grayscale(65%) contrast(1.12) brightness(0.92);
-}
-.hero-figure img{width:100%; height:100%; object-fit:cover; display:block;}
-.hero-figure::after{
-content:''; position:absolute; inset:0;
-box-shadow:inset 0 0 0 1px var(--line);
-}
-.tag-sticker{
-position:absolute; top:20px; right:20px; z-index:2;
-background:var(--signal); color:#0B0B0B;
-font-family:'Helvetica Neue', Arial, sans-serif; font-weight:900;
-font-size:11px; letter-spacing:-0.01em; text-transform:uppercase;
-padding:6px 10px; transform:rotate(-2deg);
-}
-
-section.work{padding:0; border-bottom:1px solid var(--line);}
-section.work:last-of-type{border-bottom:none;}
-.section-head{
-display:grid; grid-template-columns:120px 1fr; gap:0;
-}
-.section-index{
-font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--signal);
-letter-spacing:0.08em; padding:32px 20px 32px 0; border-right:1px solid var(--line);
-}
-.section-head h2{
-font-family:'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:clamp(26px, 3.6vw, 46px);
-text-transform:uppercase; letter-spacing:-0.02em; padding:32px 24px 20px;
-}
-.section-meta{
-font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--ink-dim);
-letter-spacing:0.04em; padding:0 24px 32px 144px; text-transform:uppercase;
-border-bottom:1px solid var(--line);
-}
-
-.grid-photo{
-display:grid; grid-template-columns:repeat(3, 1fr);
-}
-.grid-photo figure{
-position:relative; aspect-ratio:16/9; overflow:hidden; background:#000;
-border-right:1px solid var(--line); border-bottom:1px solid var(--line);
-filter:grayscale(30%) contrast(1.08);
-}
-.grid-photo figure:nth-child(3n){border-right:none;}
-.grid-photo img{width:100%; height:100%; object-fit:cover; display:block;}
-.grid-photo figure .tag{
-position:absolute; top:0; left:0;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
-background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em;
-}
-
-/* --- Case-study layout: image mosaic + copy, used for FRET12 / Goodfall / Documentary / Real Estate --- */
-.case{
-display:grid; grid-template-columns:1fr 1fr;
-}
-.case-full{display:block;}
-.case-full .case-media{border-right:none;}
-.case-full .case-copy{
-padding:28px 32px 36px; border-top:1px solid var(--line);
-display:flex; flex-wrap:wrap; gap:32px; align-items:flex-start;
-}
-.case-full .case-copy p{max-width:42ch; margin-bottom:0;}
-.case-full .role-tags{margin-top:0; align-self:center;}
-@media (max-width:700px){
-.case-full .case-copy{display:block;}
-.case-full .case-copy p{margin-bottom:16px;}
-}
-.case.reverse .case-media{order:2; border-left:1px solid var(--line); border-right:none;}
-.case.reverse .case-copy{order:1;}
-.case-media{
-display:grid; grid-template-columns:repeat(2, 1fr);
-border-right:1px solid var(--line);
-background:#000;
-}
-.case-media figure{
-position:relative; aspect-ratio:16/9; overflow:hidden;
-border-right:1px solid var(--line); border-bottom:1px solid var(--line);
-filter:grayscale(30%) contrast(1.08);
-}
-.case-media figure:nth-child(2n){border-right:none;}
-.case-media img{width:100%; height:100%; object-fit:cover; display:block;}
-.case-media figure .tag{
-position:absolute; top:0; left:0;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
-background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em;
-}
-.case-media.two{grid-template-columns:1fr; grid-template-rows:1fr 1fr;}
-.case-media.two figure{border-right:none;}
-.case-media.two figure:last-child{border-bottom:none;}
-
-.video-grid{display:grid; grid-template-columns:repeat(2, 1fr);}
-.video-grid.single{grid-template-columns:1fr;}
-.video-embed{position:relative; width:100%; padding-bottom:56.25%; height:0; overflow:hidden; border-right:1px solid var(--line); border-bottom:1px solid var(--line);}
-.video-grid.single .video-embed, .video-embed.full{border-right:none;}
-.video-grid figure:last-child .video-embed, .video-grid > .video-embed:last-child{border-right:none;}
-.video-grid > :nth-child(2n){border-right:none;}
-.video-embed iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0; filter:grayscale(30%) contrast(1.08);}
-.video-embed .tag{
-position:absolute; top:0; left:0; z-index:2;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
-background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em;
-}
-.still-row{display:grid; grid-template-columns:1fr 1fr;}
-.still-row figure{position:relative; aspect-ratio:16/9; overflow:hidden; border-right:1px solid var(--line); filter:grayscale(30%) contrast(1.08);}
-.still-row figure:last-child{border-right:none;}
-.still-row img{width:100%; height:100%; object-fit:cover; display:block;}
-
-.case-media-wrap{border-right:1px solid var(--line); background:#000;}
-.case.reverse .case-media-wrap{order:2; border-left:1px solid var(--line); border-right:none;}
-.case.reverse .case-copy{order:1;}
-.photo-quad{display:grid; grid-template-columns:repeat(2, 1fr);}
-.photo-quad figure{position:relative; aspect-ratio:16/9; overflow:hidden; border-right:1px solid var(--line); border-top:1px solid var(--line); filter:grayscale(30%) contrast(1.08);}
-.photo-quad figure:nth-child(2n){border-right:none;}
-.photo-quad img{width:100%; height:100%; object-fit:cover; display:block;}
-.photo-quad figure .tag{
-position:absolute; top:0; left:0;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
-background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em;
-}
-@media (max-width:860px){
-.video-grid{grid-template-columns:1fr;}
-.video-embed{border-right:none;}
-.still-row{grid-template-columns:1fr;}
-.still-row figure{border-right:none; border-bottom:1px solid var(--line);}
-.still-row figure:last-child{border-bottom:none;}
-.case-media-wrap{border-right:none; border-left:none;}
-.case.reverse .case-media-wrap{border-left:none;}
-.photo-quad{grid-template-columns:1fr 1fr;}
-}
-
-.case-copy{padding:32px 32px 36px;}
-.case-copy p{
-font-family:'Helvetica Neue', Arial, sans-serif;
-font-size:15px; line-height:1.6; color:var(--ink-dim); margin-bottom:16px; max-width:46ch;
-}
-.case-copy p:last-of-type{margin-bottom:0;}
-.role-tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:26px;}
-.role-tag{
-font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.04em;
-text-transform:uppercase; padding:6px 10px; color:var(--bg); background:var(--ink);
-}
-
-.write-list{border-top:1px solid var(--line);}
-.write-row{
-display:grid; grid-template-columns:64px 1fr 180px;
-align-items:start; padding:26px 24px; border-bottom:1px solid var(--line);
-gap:20px;
-}
-.write-num{
-font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--signal);
-letter-spacing:0.06em; padding-top:3px;
-}
-.write-title{
-font-family:'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:20px;
-text-transform:uppercase; letter-spacing:-0.015em; margin-bottom:8px;
-}
-.write-title span{color:var(--ink-dim); font-weight:400; text-transform:none; letter-spacing:0;}
-.write-desc{
-font-family:'Helvetica Neue', Arial, sans-serif; font-size:14px; line-height:1.6;
-color:var(--ink-dim); max-width:56ch;
-}
-.write-status{
-font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.05em;
-text-transform:uppercase; text-align:right; padding-top:5px; color:var(--ink);
-}
-@media (max-width:860px){
-.write-row{grid-template-columns:36px 1fr; grid-template-areas:"num title" ". desc" ". status";}
-.write-num{grid-area:num;} .write-body{grid-area:title;} .write-status{grid-area:status; text-align:left; margin-top:10px;}
-}
-
-@media (max-width:860px){
-.grid-photo{grid-template-columns:repeat(2,1fr);}
-.grid-photo figure:nth-child(2n){border-right:none;}
-.grid-photo figure:nth-child(3n){border-right:1px solid var(--line);}
-.case, .case.reverse{grid-template-columns:1fr;}
-.case.reverse .case-media{order:1; border-left:none; border-right:none; border-bottom:1px solid var(--line);}
-.case.reverse .case-copy{order:2;}
-.case-media{border-right:none; border-bottom:1px solid var(--line);}
-.section-head{grid-template-columns:80px 1fr;}
-.section-meta{padding-left:104px;}
-/* one swipeable row on phones so the sticky header stays short */
-nav{width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;}
-nav::-webkit-scrollbar{display:none;}
-nav ul{flex-wrap:nowrap;}
-nav a{display:block; white-space:nowrap;}
-}
-
-/* --- Self-hosted campaign video: Rail Jacket + Paid Social. No grayscale filter, so the color grade shows as delivered. --- */
-.film-grid{display:grid; grid-template-columns:repeat(2, 1fr);}
-.film{position:relative; aspect-ratio:16/9; background:#000; overflow:hidden; border-right:1px solid var(--line); border-bottom:1px solid var(--line);}
-.film:last-child{border-right:none;}
-.film video, .vert video, .vert img{width:100%; height:100%; object-fit:cover; display:block; background:#000;}
-.film .tag, .vert .tag{
-position:absolute; top:0; left:0; z-index:2; pointer-events:none;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink);
-background:rgba(0,0,0,0.65); padding:5px 8px; letter-spacing:0.05em; text-transform:uppercase;
-}
-.vert-grid{display:grid; grid-template-columns:repeat(4, 1fr);}
-.vert{position:relative; aspect-ratio:9/16; background:#000; overflow:hidden; border-right:1px solid var(--line); border-bottom:1px solid var(--line);}
-.vert-grid .vert:nth-child(4n){border-right:none;}
-.story-row{display:grid; grid-template-columns:1fr 1fr 2fr;}
-.story-row .case-copy{border-bottom:1px solid var(--line);}
-.stat-line{
-display:flex; flex-wrap:wrap; gap:0; margin-top:22px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--ink-dim);
-}
-.stat-line span{padding:12px 18px 12px 0; margin-right:18px; border-right:1px solid var(--line);}
-.stat-line span:last-child{border-right:none; margin-right:0;}
-.stat-line b{color:var(--signal); font-weight:500;}
-@media (max-width:860px){
-.film-grid{grid-template-columns:1fr;}
-.film{border-right:none;}
-.vert-grid{grid-template-columns:repeat(2, 1fr);}
-.vert-grid .vert:nth-child(2n){border-right:none;}
-.story-row{grid-template-columns:1fr 1fr;}
-.story-row .vert:nth-child(2){border-right:none;}
-.story-row .case-copy{grid-column:1 / -1;}
-}
-
-footer{padding:0;}
-.footer-grid{display:grid; grid-template-columns:1fr 1fr;}
-.footer-cell{padding:40px 32px; border-right:1px solid var(--line);}
-.footer-cell:last-child{border-right:none;}
-.footer-label{
-font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--signal);
-letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px;
-}
-footer a{color:var(--ink); text-decoration:none; font-family:'JetBrains Mono', monospace; font-size:14px;}
-footer a:hover{color:var(--signal);}
-.fine{
-border-top:1px solid var(--line); padding:18px 32px;
-font-family:'JetBrains Mono', monospace; font-size:10px; color:var(--ink-dim);
-letter-spacing:0.04em; text-transform:uppercase;
-}
-@media (max-width:860px){.footer-grid{grid-template-columns:1fr;} .footer-cell{border-right:none; border-bottom:1px solid var(--line);}}
-</style>
+<link rel="stylesheet" href="/assets/site.css?v=3">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Clarence Crowell", "alternateName": "Clarence Albert Crowell IV", "url": "https://clarencecrowell.org/", "jobTitle": "Photographer and filmmaker", "worksFor": {"@type": "Organization", "name": "FRET12", "url": "https://www.fret12.com"}, "address": {"@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US"}, "knowsAbout": ["Photography", "Videography", "Video editing", "Color grading", "Documentary film", "Paid social", "Fiction"]}</script>
 </head>
 <body>
-
-<header class="masthead">
-<div class="wrap masthead-row">
-<div class="brand">Crowell IV</div>
-<nav>
-<ul>
-<li><a href="#photography">Photo</a></li>
-<li><a href="#fret12">FRET12</a></li>
-<li><a href="#railjacket">Rail Jacket</a></li>
-<li><a href="#paidsocial">Ads</a></li>
-<li><a href="#goodfall">Goodfall</a></li>
-<li><a href="#documentary">Doc</a></li>
-<li><a href="#realestate">R.E.</a></li>
-<li><a href="#writing">Writing</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
-
-<div class="wrap">
-
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead"><div class="wrap masthead-row"><a class="brand" href="/">Crowell IV</a><nav aria-label="Sections"><ul><li><a href="/photography/">Photo</a></li><li><a href="/fret12/">FRET12</a></li><li><a href="/rail-jacket/">Rail Jacket</a></li><li><a href="/ads/">Ads</a></li><li><a href="/back-to-craft/">Back to Craft</a></li><li><a href="/music/">Music</a></li><li><a href="/goodfall/">Goodfall</a></li><li><a href="/documentary/">Doc</a></li><li><a href="/real-estate/">R.E.</a></li><li><a href="/writing/">Writing</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<main id="main" class="wrap">
 <section class="hero">
 <div class="hero-top">
-<span>Chicago, IL — 41.8781°N, 87.6298°W</span>
-<span>Index — 001</span>
+<span>Chicago, IL &mdash; 41.8781&deg;N, 87.6298&deg;W</span>
+<span>Index &mdash; 001</span>
 </div>
 <h1>Crowell</h1>
 <div class="hero-roles">
@@ -351,260 +38,49 @@ letter-spacing:0.04em; text-transform:uppercase;
 <span>Web Design</span>
 </div>
 <div class="hero-figure">
-<span class="tag-sticker">No. 001 — Not For Resale</span>
-<img src="images/hero.jpg" alt="Hero image">
+<span class="tag-sticker">No. 001 &mdash; Not For Resale</span>
+<img src="/images/hero.jpg" alt="Climbing gym, wide shot" width="2400" height="1601">
 </div>
 </section>
-
-<section class="work" id="photography">
-<div class="section-head">
-<div class="section-index">01</div>
-<h2>Photography</h2>
-</div>
-<div class="section-meta">Outdoor / Climbing / Music / Product / Campaign</div>
-<div class="grid-photo">
-<figure><span class="tag">01</span><img src="images/photo-1.jpg" alt="Photography 1"></figure>
-<figure><span class="tag">02</span><img src="images/photo-2.jpg" alt="Photography 2"></figure>
-<figure><span class="tag">03</span><img src="images/photo-3.jpg" alt="Photography 3"></figure>
-<figure><span class="tag">04</span><img src="images/photo-4.jpg" alt="Photography 4"></figure>
-<figure><span class="tag">05</span><img src="images/photo-5.jpg" alt="Photography 5"></figure>
-<figure><span class="tag">06</span><img src="images/photo-6.jpg" alt="Photography 6"></figure>
-</div>
-</section>
-
-<!-- CASE STUDY: FRET12 — video-only: FRET12 Reel + FRET12 Sessions Reel (YouTube) -->
-<section class="work" id="fret12">
-<div class="section-head">
-<div class="section-index">02</div>
-<h2>FRET12</h2>
-</div>
-<div class="section-meta">Content Producer / Digital Strategist</div>
-<div class="case case-full">
-<div class="case-media video-grid">
-<div class="video-embed"><span class="tag">FRET12 Reel</span><iframe src="https://www.youtube-nocookie.com/embed/aCzN8zu0TeY" title="FRET12 Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-<div class="video-embed"><span class="tag">Sessions Reel</span><iframe src="https://www.youtube-nocookie.com/embed/KrnUvRqkFx0" title="FRET12 Sessions Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-<div class="film"><span class="tag">F-12 Fatigue Pant — Film</span><video src="video/fatigue-pant-film.mp4" poster="images/poster-fatigue-pant-film.jpg" controls playsinline preload="none" aria-label="F-12 Fatigue Pant launch film"></video></div>
-<div class="film"><span class="tag">Rail Jacket — Launch Event</span><video src="video/rail-jacket-recap.mp4" poster="images/poster-rail-jacket-recap.jpg" controls playsinline preload="none" aria-label="Rail Jacket launch event recap"></video></div>
-</div>
-<div class="case-copy">
-<p>Multimedia production end to end — concept, shoot, edit, color, delivery — across social, web, and brand campaigns.</p>
-<p>Built ThankVids: an internal AI-assisted tool that cut a core video-fulfillment process from ~20 minutes to 45 seconds per unit. In development as a standalone product.</p>
-<div class="role-tags">
-<span class="role-tag">Motion Graphics</span>
-<span class="role-tag">Editor</span>
-<span class="role-tag">Photographer</span>
-<span class="role-tag">Videographer</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CAMPAIGN: FRET12 × Huckberry × Metric Coffee — Rail Jacket. Self-hosted films + two Instagram stories -->
-<section class="work" id="railjacket">
-<div class="section-head">
-<div class="section-index">03</div>
-<h2>Rail Jacket</h2>
-</div>
-<div class="section-meta">FRET12 × Huckberry × Metric Coffee — Campaign</div>
-<div class="film-grid">
-<div class="film"><span class="tag">Hero Film</span><video src="video/rail-jacket-film.mp4" poster="images/poster-rail-jacket-film.jpg" controls playsinline preload="none" aria-label="Rail Jacket hero film"></video></div>
-<div class="film"><span class="tag">Launch Event — Huckberry Chicago</span><video src="video/rail-jacket-recap.mp4" poster="images/poster-rail-jacket-recap.jpg" controls playsinline preload="none" aria-label="Rail Jacket launch event recap"></video></div>
-</div>
-<div class="story-row">
-<figure class="vert"><span class="tag">Story 01</span><img src="images/rail-jacket-story-1.jpg" alt="Rail Jacket campaign story: Metric Coffee dye bath" loading="lazy"></figure>
-<figure class="vert"><span class="tag">Story 02</span><img src="images/rail-jacket-story-2.jpg" alt="Rail Jacket campaign story: coffee-dyed fabric" loading="lazy"></figure>
-<div class="case-copy">
-<p>A jacket designed, patterned, cut and sewn by FRET12 for Huckberry, naturally dyed with Metric Coffee.</p>
-<p>Concepted, shot, edited and color graded the hero film and the launch event recap at Huckberry's Chicago store. Shot, edited and published the campaign photography.</p>
-<div class="role-tags">
-<span class="role-tag">Concept</span>
-<span class="role-tag">Videographer</span>
-<span class="role-tag">Editor</span>
-<span class="role-tag">Colorist</span>
-<span class="role-tag">Photographer</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- PAID SOCIAL: FRET12 Meta ads + launch videos, vertical, self-hosted. Autoplay muted when on screen (script at bottom) -->
-<section class="work" id="paidsocial">
-<div class="section-head">
-<div class="section-index">04</div>
-<h2>Paid Social</h2>
-</div>
-<div class="section-meta">FRET12 — Meta Ads / Launch Videos</div>
-<div class="vert-grid">
-<figure class="vert"><span class="tag">String Thing — Hook</span><video class="ad" src="video/string-thing-hook.mp4" poster="images/poster-string-thing-hook.jpg" muted loop playsinline controls preload="none" aria-label="String Thing hook ad"></video></figure>
-<figure class="vert"><span class="tag">String Thing — Mark Tremonti</span><video class="ad" src="video/string-thing-tremonti.mp4" poster="images/poster-string-thing-tremonti.jpg" muted loop playsinline controls preload="none" aria-label="String Thing retargeting ad: Mark Tremonti unboxing"></video></figure>
-<figure class="vert"><span class="tag">Totes — Maker Video</span><video class="ad" src="video/totes-maker.mp4" poster="images/poster-totes-maker.jpg" muted loop playsinline controls preload="none" aria-label="FRET12 totes maker video"></video></figure>
-<figure class="vert"><span class="tag">F-12 Fatigue Pant — Launch</span><video class="ad" src="video/fatigue-pant.mp4" poster="images/poster-fatigue-pant.jpg" muted loop playsinline controls preload="none" aria-label="F-12 Fatigue Pant launch video"></video></figure>
-</div>
-<div class="case case-full">
-<div class="case-copy">
+<section class="intro" aria-label="About">
+<div class="label">About</div>
 <div>
-<p>Vertical ad and launch creative for FRET12's Meta program: hook-first cuts, a retargeting unboxing with Mark Tremonti, and product launches built with 2D motion graphics. Concept, shoot, edit and color on every piece.</p>
-<div class="stat-line">
-<span><b>~$180K</b> spend managed</span>
-<span><b>~3%</b> CTR</span>
-<span><b>~2.5x</b> ROAS</span>
-<span>2 years of FRET12 Meta ads</span>
-</div>
-</div>
-<div class="role-tags">
-<span class="role-tag">Concept</span>
-<span class="role-tag">Videographer</span>
-<span class="role-tag">Editor</span>
-<span class="role-tag">Colorist</span>
-<span class="role-tag">Motion Graphics</span>
-</div>
-</div>
+<p>I&rsquo;m Clarence Crowell, a photographer and filmmaker in Chicago. At FRET12 I make the campaign films, the ads, the live music sessions and a documentary series about local makers, most of them from the first idea through camera, edit and color. I also shoot nearly all of the brand&rsquo;s photography.</p>
+<p>I co-founded Good Fall Studio, a climbing apparel brand, and I write fiction. Pick a section below, or get in touch at the bottom of the page.</p>
 </div>
 </section>
-
-<!-- CASE STUDY: Good Fall Studio — video (brand video) + 4 supporting images -->
-<section class="work" id="goodfall">
-<div class="section-head">
-<div class="section-index">05</div>
-<h2>Good Fall Studio</h2>
-</div>
-<div class="section-meta">Co-Founder / Creative Director</div>
-<div class="case reverse">
-<div class="case-media-wrap">
-<div class="video-embed full"><span class="tag">Good Fall Studio</span><iframe src="https://www.youtube-nocookie.com/embed/4LObgWrQzX8" title="Good Fall Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-<div class="photo-quad">
-<figure><span class="tag">01</span><img src="images/goodfall-1.jpg" alt="Good Fall Studio image 1"></figure>
-<figure><span class="tag">02</span><img src="images/goodfall-2.jpg" alt="Good Fall Studio image 2"></figure>
-<figure><span class="tag">03</span><img src="images/goodfall-3.jpg" alt="Good Fall Studio image 3"></figure>
-<figure><span class="tag">04</span><img src="images/goodfall-4.jpg" alt="Good Fall Studio image 4"></figure>
-</div>
-</div>
-<div class="case-copy">
-<p>Climbing-culture apparel and creative brand, co-founded and run end to end — product, storefront, content.</p>
-<p>Full Shopify and SEO overhaul across the product catalog. Print magazine designed in InDesign.</p>
-<div class="role-tags">
-<span class="role-tag">Co-Founder</span>
-<span class="role-tag">Creative Director</span>
-<span class="role-tag">Graphic Design</span>
-</div>
-</div>
-</div>
+<section class="index-list" aria-label="Work">
+<a class="index-row" href="/photography/"><div class="num">01</div><div class="txt"><h2>Photography</h2><div class="meta">Outdoor / Climbing / Music / Product / Campaign</div><p>Landscape, wildlife, climbing, live music, and the campaign photography behind FRET12&rsquo;s launches.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/photo-1.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/fret12/"><div class="num">02</div><div class="txt"><h2>FRET12</h2><div class="meta">Content Creator &mdash; Campaign, Product and Maker Films</div><p>Campaign and product films for a Chicago guitar and apparel brand. Concept, camera, edit and color.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/poster-eqd-maker.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/rail-jacket/"><div class="num">03</div><div class="txt"><h2>Rail Jacket</h2><div class="meta">FRET12 &times; Huckberry &times; Metric Coffee &mdash; Campaign</div><p>A three-brand launch with Huckberry and Metric Coffee: hero film, event recap and photography.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/poster-rail-jacket-film.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/ads/"><div class="num">04</div><div class="txt"><h2>Paid Social</h2><div class="meta">FRET12 &mdash; Meta Ads / Launch Videos</div><p>Vertical ad creative and the Meta program behind it. About $180K in spend over two years.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/poster-candle-ad.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/back-to-craft/"><div class="num">05</div><div class="txt"><h2>Back to Craft</h2><div class="meta">A FRET12 Documentary Series &mdash; Director / Producer</div><p>A FRET12 documentary series about local makers. Directed, produced, shot and edited.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/poster-b2c-paul-natkin.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/music/"><div class="num">06</div><div class="txt"><h2>Music</h2><div class="meta">FRET12 Sessions / The Sound and The Story &mdash; Videographer / Editor / Colorist</div><p>FRET12 Sessions: live sets with Baroness, Brother Wallace, Mclusky, Pelican and more.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/poster-baroness-session.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/goodfall/"><div class="num">07</div><div class="txt"><h2>Good Fall Studio</h2><div class="meta">Co-Founder / Creative Director</div><p>A climbing apparel brand I co-founded and run: product, storefront, content.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="/images/goodfall-3.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/documentary/"><div class="num">08</div><div class="txt"><h2>Documentary</h2><div class="meta">Videographer / Editor</div><p>Short portraits, built from time with a person rather than a script.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="https://i.ytimg.com/vi/YEiy2NTixOw/maxresdefault.jpg" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/real-estate/"><div class="num">09</div><div class="txt"><h2>Real Estate</h2><div class="meta">Videographer / Editor &mdash; Core12</div><p>Architectural video for Core12, inside Willis Tower and The Mart.</p><span class="go">View &rarr;</span></div><div class="thumb"><img src="https://i.vimeocdn.com/video/2073564323-3eee746d615f582e7b63dd323fa2d53ddbbf37f2e95c64194594881b0debc30e-d_1280x720" alt="" loading="lazy"></div></a>
+<a class="index-row" href="/writing/"><div class="num">10</div><div class="txt"><h2>Writing</h2><div class="meta">Fiction &mdash; Novellas / Novel-in-Stories</div><p>Three books of fiction. Two of them are about people and land.</p><span class="go">View &rarr;</span></div><div class="thumb type"><span>Past the Grass</span><span>Inholding</span><span>Butch</span></div></a>
 </section>
-
-<!-- CASE STUDY: Documentary — video-only, no stills: two YouTube embeds -->
-<section class="work" id="documentary">
-<div class="section-head">
-<div class="section-index">06</div>
-<h2>Documentary</h2>
-</div>
-<div class="section-meta">Videographer / Editor</div>
-<div class="case case-full">
-<div class="case-media video-grid">
-<div class="video-embed"><span class="tag">01</span><iframe src="https://www.youtube-nocookie.com/embed/YEiy2NTixOw" title="Documentary 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-<div class="video-embed"><span class="tag">02</span><iframe src="https://www.youtube-nocookie.com/embed/a-ekxLXxETY" title="Documentary 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-</div>
-<div class="case-copy">
-<p>Long-form documentary work. Narrative built from place and time, not a script written in advance.</p>
-<div class="role-tags">
-<span class="role-tag">Videographer</span>
-<span class="role-tag">Editor</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CASE STUDY: Real Estate / Core12 — Vimeo video only (ownership transition), no stills -->
-<section class="work" id="realestate">
-<div class="section-head">
-<div class="section-index">07</div>
-<h2>Real Estate</h2>
-</div>
-<div class="section-meta">Videographer / Editor — Core12</div>
-<div class="case reverse">
-<div class="case-media" style="display:block;">
-<div class="video-embed full"><span class="tag">Core12 — 2 North Riverside</span><iframe src="https://player.vimeo.com/video/1130013403" title="Core12 Ownership Transition" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-</div>
-<div class="case-copy">
-<p>Corporate and architectural media for Core12, on location inside Willis Tower and The Mart.</p>
-<p>Produced, shot, and edited the Core12 ownership-transition video for 2 North Riverside, delivered directly to the building's new ownership.</p>
-<div class="role-tags">
-<span class="role-tag">Videographer</span>
-<span class="role-tag">Editor</span>
-</div>
-</div>
-</div>
-</section>
-
-<section class="work" id="writing">
-<div class="section-head">
-<div class="section-index">08</div>
-<h2>Writing</h2>
-</div>
-<div class="section-meta">Fiction — Novellas / Novel-in-Stories</div>
-<div class="write-list">
-<div class="write-row">
-<div class="write-num">01</div>
-<div class="write-body">
-<div class="write-title">Past the Grass <span>— A Triptych</span></div>
-<div class="write-desc">Three linked parts: Tracks / All Laid Out / The Shape of Trees. A name worn down across generations until it isn't one anymore.</div>
-</div>
-<div class="write-status">Complete</div>
-</div>
-<div class="write-row">
-<div class="write-num">02</div>
-<div class="write-body">
-<div class="write-title">Inholding <span>— The Miserable Acres</span></div>
-<div class="write-desc">A wildfire, a ranch, two men who never get the reckoning either one expects.</div>
-</div>
-<div class="write-status">Draft 2 — In Revision</div>
-</div>
-<div class="write-row">
-<div class="write-num">03</div>
-<div class="write-body">
-<div class="write-title">Butch</div>
-<div class="write-desc">A Pinkerton detective, the New England coast, 1922. Pulp, not polish.</div>
-</div>
-<div class="write-status">In Progress</div>
-</div>
-</div>
-</section>
-
-</div>
-
+</main>
+<script>
+// Old one-page links (clarencecrowell.org/#fret12) go to the new pages.
+(function(){var m={'#photography':'/photography/','#fret12':'/fret12/','#railjacket':'/rail-jacket/','#paidsocial':'/ads/','#goodfall':'/goodfall/','#documentary':'/documentary/','#realestate':'/real-estate/','#writing':'/writing/'};var t=m[location.hash];if(t)location.replace(t);})();
+</script>
 <footer id="contact">
-<div class="wrap" style="padding:0 32px;">
+<div class="wrap">
 <div class="footer-grid" style="border-top:1px solid var(--line);">
 <div class="footer-cell">
 <div class="footer-label">Contact</div>
-<a href="mailto:clarencecrowell4@gmail.com">clarencecrowell4@gmail.com</a><br><br>
-<a href="tel:7747223012">774-722-3012</a>
+<a href="tel:+17747223012">774-722-3012</a>
 </div>
 <div class="footer-cell">
 <div class="footer-label">Location</div>
-<a href="#">Chicago, IL</a>
+<span class="foot-text">Chicago, IL</span>
 </div>
 </div>
-<div class="fine">Clarence Albert Crowell IV — Photography / Videography / 2D Design / Web Design</div>
+<div class="fine">Clarence Albert Crowell IV &mdash; Photography / Videography / 2D Design / Web Design</div>
 </div>
 </footer>
-
-<script>
-// Paid Social ads play muted while on screen and pause when scrolled away, like a feed.
-// Skipped for visitors who ask for reduced motion; they can still press play.
-(function(){
-  var ads = document.querySelectorAll('video.ad');
-  if (!('IntersectionObserver' in window)) return;
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      var v = e.target;
-      if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
-      else { v.pause(); }
-    });
-  }, {threshold: 0.6});
-  ads.forEach(function(v){ io.observe(v); });
-})();
-</script>
-
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>
