@@ -1,0 +1,10 @@
+[
+  {
+    "location": "/writing/",
+    "tdm-reservation": 1
+  },
+  {
+    "location": "/writing/*",
+    "tdm-reservation": 1
+  }
+]
